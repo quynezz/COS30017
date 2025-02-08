@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="currentHold" >Current hold: 0</string>
+    <string name="climb"> Climb </string>
+    <string name="reset"> Reset</string>
+    <string name="fall"> Fall</string>
+    <string name="zone">Ground Zone</string>
+    <string name="score">Point</string>
+    <string name="toastHaveLanded">You have landed!</string>
+    <string name="toastHaveFallen">You have fallen! click Reset to start over! </string>
+    <string name="toastResetPoint">The score has been reset </string>
+    <string name="toastReachTop">Congratulation! You\'ve reached the top \uD83C\uDF89 ! Click reset to start again</string>
+    <string name="toastNeedReset">Click reset to start again</string>
+</resources>

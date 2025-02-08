@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="currentHold">Bạn đang ở bậc 0</string>
+    <string name="climb"> Trèo </string>
+    <string name="reset"> Reset điểm</string>
+    <string name="fall"> Ngã </string>
+    <string name="zone">Bạn đang ở vùng</string>
+    <string name="score">Điểm</string>
+    <string name="toastHaveLanded">Bạn đã đáp đất!</string>
+    <string name="toastHaveFallen">Bạn đã rơi! Không thể tiếp tục leo tiếp, nhấn Reset để bắt đầu lại</string>
+    <string name="toastResetPoint">Điểm đã được reset</string>
+    <string name="toastReachTop">Xin chúc mừng \uD83C\uDF89! Bạn đã leo đến đỉnh ! Nhấn Reset để bắt đầu lại</string>
+    <string name="toastNeedReset">Nhấn Reset để bắt đầu lại</string>
+
+</resources>
