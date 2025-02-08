@@ -3,16 +3,31 @@ import android.content.Context
 import android.util.Log
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import org.w3c.dom.Text
 import java.util.Locale
 
-fun getZone(context: Context,value: Int, zoneText: TextView){
+fun getZone(context: Context,value: Int, zoneText: TextView, pointText: TextView){
     when (value) {
-        0 -> zoneText.setTextColor(ContextCompat.getColor(context,R.color.darkGrey))
-        in 1..3 -> zoneText.setTextColor(ContextCompat.getColor(context,R.color.blue))
-        in 4..8 -> zoneText.setTextColor(ContextCompat.getColor(context,R.color.darkGreen))
-        in 9..18 -> zoneText.setTextColor(ContextCompat.getColor(context,R.color.darkRed))
+        0 -> {
+            zoneText.setTextColor(ContextCompat.getColor(context,R.color.darkGrey))
+            pointText.setTextColor(ContextCompat.getColor(context,R.color.darkGrey))
+        }
+        in 1..3 -> {
+            zoneText.setTextColor(ContextCompat.getColor(context,R.color.blue))
+            pointText.setTextColor(ContextCompat.getColor(context,R.color.blue))
+        }
+        in 4..8 -> {
+            zoneText.setTextColor(ContextCompat.getColor(context,R.color.darkGreen))
+            pointText.setTextColor(ContextCompat.getColor(context,R.color.darkGreen))
+        }
+        in 9..18 ->{
+            zoneText.setTextColor(ContextCompat.getColor(context,R.color.darkRed))
+            pointText.setTextColor(ContextCompat.getColor(context,R.color.darkRed))
+        }
     }
 }
+
+
 
 fun getColour(value: Int, vnState : Boolean, engState: Boolean) : String {
     var colorZone: String = ""

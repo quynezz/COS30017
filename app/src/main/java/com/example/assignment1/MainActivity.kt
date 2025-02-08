@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var zoneText: TextView
     private lateinit var displayHoldState: TextView
     private var vnState:Boolean = false
-    private var engState:Boolean = false
+    private var engState:Boolean = true
 
     // One-Time Click
     private var vietnamToast:Boolean = false
@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateZoneDisplay() {
         val currentPointDisplay:String = getString(R.string.score)
-        getZone(this,currentValue,zoneText)
+        getZone(this,currentValue,zoneText,result)
         colorZone = getColour(currentValue,vnState,engState)
         if(engState){
             zoneText.text = "$colorZone Zone"
@@ -174,8 +174,8 @@ class MainActivity : AppCompatActivity() {
                     holdState = maxHoldState
                     currentValue = maxPoint
                     Toast.makeText(this,toastTextReachTop,Toast.LENGTH_LONG).show()
-                    climbAlphaSet = 0.5f
-                    fallAlphaSet = 0.5f
+                    climbAlphaSet = 0.3f
+                    fallAlphaSet = 0.3f
                     setAlpha(climbFunction,fallFunction)
                 }
                 updateZoneDisplay()
@@ -222,8 +222,8 @@ class MainActivity : AppCompatActivity() {
                 }
                 hasFallen = true
             // adjust the color to make user reset after fell
-                climbAlphaSet = 0.5f
-                fallAlphaSet = 0.5f
+                climbAlphaSet = 0.3f
+                fallAlphaSet = 0.3f
                 setAlpha(climbFunction,fallFunction)
             }else if(!resetButtonClicked){
                 Toast.makeText(this, toastTextReachTop, Toast.LENGTH_SHORT).show()
